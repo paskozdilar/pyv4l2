@@ -10,8 +10,7 @@ from pyv4l2 import __version__
 
 
 try:
-    # Always use CYTHON
-    # sys.argv.remove('--use-cython')
+    sys.argv.remove('--use-cython')
     USE_CYTHON = True
 except ValueError:
     USE_CYTHON = False

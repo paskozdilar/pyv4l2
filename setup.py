@@ -10,7 +10,8 @@ from pyv4l2 import __version__
 
 
 try:
-    sys.argv.remove('--use-cython')
+    # Always use cython
+    # sys.argv.remove('--use-cython')
     USE_CYTHON = True
 except ValueError:
     USE_CYTHON = False
@@ -50,7 +51,7 @@ setup(
     author_email='duanhongyi@doopai.com',
     url='https://github.com/duanhongyi/pyv4l2',
     license='GNU Lesser General Public License v3 (LGPLv3)',
-    setup_requires=['Cython >= 0.29.12', ],  # Require new Cython version for Python 3.8
+    setup_requires=['Cython>=0.29.12', ],  # Require new Cython version for Python 3.8
     extras_require={
         'examples': ['pillow', 'numpy'],
     },

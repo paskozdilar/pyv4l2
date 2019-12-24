@@ -51,7 +51,7 @@ setup(
     author_email='duanhongyi@doopai.com',
     url='https://github.com/duanhongyi/pyv4l2',
     license='GNU Lesser General Public License v3 (LGPLv3)',
-    setup_requires=['Cython >= 0.29', ],  # Change to new Cython version for Python3.8
+    setup_requires=['Cython >= 0.29.12', ],  # Require new Cython version for Python 3.8
     extras_require={
         'examples': ['pillow', 'numpy'],
     },
